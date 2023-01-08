@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Light", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.warringtouser {
+  user-select: none;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center; /** X-axis align **/
+  opacity: 0.5;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
+  height: 100vh;
+  display: flex;
+}
+
+
+.col {
+  flex: 1;
+  /*background: darkred ;*/
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+}
+
+
+.poup__wrap {
+  width: 100%;
+  transition: all 0.5s ease;
+  height: 100vh;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  background: #ffff;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.col h2 {
+  padding: 10px;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.col h2:hover {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
+
+.col button {
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  color: #fff;
+  fill: #fff;
+  padding: 10px;
+}
+
+
+
+.col button:hover {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
