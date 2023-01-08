@@ -18,7 +18,7 @@ function App() {
             poup__wrap.style.visibility = 'hidden'
             poup__wrap.style.transform = 'scale(1)'
         } else if (bool == true) {
-            let items = ['😀', '😎',  '🥰', '😏', '😁','😉','☺','🤗','🙃']
+            let items = ['😀', '🙂', '😎','🥰', '😏','😉','☺','🤗','🙃']
 
             var item = items[Math.floor(Math.random()*items.length)];
             Setanimated(true)
@@ -32,7 +32,7 @@ function App() {
     return (
         <div className='App'>
             <div className="poup__wrap">
-                <h1>Copyed <span>#0000</span>😀</h1>
+                <h1>Copyed <span>#0000</span></h1>
             </div>
             <center>
                 <h2 className='warringtouser'>To refresh a colors click space</h2>
