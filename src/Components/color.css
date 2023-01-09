@@ -1,0 +1,41 @@
+.color__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 200px;
+    margin:  0 auto;
+}
+.copy__wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+
+.color__wrap svg {
+    cursor: pointer;
+}
+
+button {
+    border: 0;
+    background: transparent;
+}
+.color__back {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.color__back:before {
+    content: '< ';
+}
